@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="32.164" viewBox="0 0 58 32.164">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_212" data-name="長方形 212" width="58" height="32.164" transform="translate(0 2)" fill="none" stroke="#1c1c1c" stroke-width="1.3"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_896" data-name="グループ 896" transform="translate(-293.656 -2330.4)">
+    <g id="グループ_267" data-name="グループ 267" transform="translate(293.656 2328.4)" clip-path="url(#clip-path)">
+      <path id="パス_216" data-name="パス 216" d="M73.483,29.059H51.759a2.255,2.255,0,0,0-2.212,2.295V44.4a2.255,2.255,0,0,0,2.212,2.3h7.975v4.093L65.764,46.7h7.719A2.255,2.255,0,0,0,75.7,44.4V31.354a2.255,2.255,0,0,0-2.212-2.295" transform="translate(-21.058 -18.334)" fill="#fff" stroke="#1c1c1c" stroke-linejoin="round" stroke-width="1.3"/>
+      <path id="パス_219" data-name="パス 219" d="M27.2,2.5H4.783A2.283,2.283,0,0,0,2.5,4.783V19.544a2.283,2.283,0,0,0,2.283,2.283h8.747l4.923,3.221V21.827H27.2a2.283,2.283,0,0,0,2.283-2.283V4.783A2.283,2.283,0,0,0,27.2,2.5Z" transform="translate(1.075 0.896)" fill="#fff" stroke="#1c1c1c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+    </g>
+    <g id="グループ_890" data-name="グループ 890" transform="translate(304.615 2335.979)">
+      <rect id="長方形_849" data-name="長方形 849" width="11.9" height="10.135" rx="3" transform="translate(0 0.992)" fill="#fff"/>
+      <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.3 0)">
+        <path id="パス_455" data-name="パス 455" d="M1.27,0h8.887a1.2,1.2,0,0,1,1.27,1.123v7.86a1.2,1.2,0,0,1-1.27,1.123H1.27A1.2,1.2,0,0,1,0,8.982V1.123A1.2,1.2,0,0,1,1.27,0Z" transform="translate(0 1.123)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_456" data-name="パス 456" d="M0,0V2.246" transform="translate(8.252 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_457" data-name="パス 457" d="M0,0V2.246" transform="translate(3.174)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+        <path id="パス_458" data-name="パス 458" d="M0,0H11.426" transform="translate(0 4.491)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+      </g>
+    </g>
+    <g id="Icon_feather-mail" data-name="Icon feather-mail" transform="translate(329.322 2343.723)">
+      <circle id="楕円形_24" data-name="楕円形 24" cx="2.066" cy="2.066" r="2.066" transform="translate(3.541 2.361)" fill="#fff"/>
+      <path id="パス_827" data-name="パス 827" d="M4.16,6h9.283A1.129,1.129,0,0,1,14.6,7.088v6.53a1.129,1.129,0,0,1-1.16,1.088H4.16A1.129,1.129,0,0,1,3,13.618V7.088A1.129,1.129,0,0,1,4.16,6Z" transform="translate(-3 -6)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+      <path id="パス_828" data-name="パス 828" d="M14.029,9,8.514,12.331,3,9" transform="translate(-2.712 -7.978)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+    </g>
+  </g>
+</svg>

@@ -3,7 +3,6 @@
 //*------------------------------------*//
 //	Base
 //*------------------------------------*//
-
 @use 'base/reset';
 @use 'base/default';
 @use 'base/base';
@@ -11,10 +10,9 @@
 
 
 //*------------------------------------*//
-//	common
+//	Component
 //*------------------------------------*//
-@use './common/header';
-@use './common/footer';
+@use './component/index';
 
 
 
@@ -22,3 +20,6 @@
 //	page
 //*------------------------------------*//
 @use './page/top';
+@use './page/concept';
+@use './page/hotel';
+@use './page/dogrun';

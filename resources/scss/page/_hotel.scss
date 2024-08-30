@@ -1,0 +1,882 @@
+@use "../base/vars" as *;
+
+body {
+  font-family: $font-family;
+  color: $text-color1;
+
+  .hotel_fv {
+    padding-top: rem(135);
+    @include media_query($sm) {
+      padding-top: 0;
+    }
+
+    .fv_img {
+      position: relative;
+
+      .fv_dog {
+        position: relative;
+        left: 27%;
+        max-width: 73%;
+        aspect-ratio: calc(1005 / 378);
+
+        @include media_query($sm) {
+          aspect-ratio: calc(298 / 305);
+        }
+      }
+
+      .breadcrumb_link {
+        position: absolute;
+        top: 5%;
+        left: 13%;
+        display: flex;
+        list-style: none;
+        @include media_query($sm) {
+          display: none;
+        }
+        @include media_query($md) {
+          left: 6%;
+        }
+        @include media_query($lg) {
+          left: 10%;
+        }
+        li {
+          margin: 0 rem(7);
+          font-size: rem(12);
+        }
+        .font-color {
+          color: $accent-color;
+        }
+      }
+
+      .fv_text {
+        position: absolute;
+        top: 30%;
+        left: 13%;
+        @include media_query($sm) {
+          top: 78%;
+          left: 5%;
+        }
+        @include media_query($md) {
+          left: 6%;
+        }
+        @include media_query($lg) {
+          left: 10%;
+        }
+        .hotel_title {
+          display: block;
+          font-size: rem(70);
+          margin-bottom: rem(5);
+          @include media_query($sm) {
+            font-size: rem(46);
+          }
+        }
+        p {
+          display: block;
+          font-size: rem(18);
+          font-weight: normal;
+          @include media_query($sm) {
+            font-size: rem(13);
+          }
+        }
+      }
+    }
+
+    .instagram_icon {
+      top: 25%;
+      left: 2%;
+      position: absolute;
+      aspect-ratio: calc(30 / 113);
+      height: rem(113);
+      position: fixed;
+      z-index: 1;
+      transition: 0.5s all;
+
+      @include media_query($sm) {
+        display: none;
+      }
+    }
+    .instagram_icon:hover {
+      opacity: 0.5;
+      transition: 0.5s all;
+    }
+    .dotted_circle {
+      position: relative;
+      max-width: rem(292);
+      aspect-ratio: calc(284 / 292);
+      margin-top: rem(-100);
+      z-index: -1;
+      @include media_query($sm) {
+        max-width: rem(170);
+        margin-top: rem(30);
+      }
+    }
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: rem(-60) auto auto;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          position: relative;
+          border: rem(2) solid;
+          width: 100%;
+          text-align: center;
+          list-style: none;
+          margin: 0 rem(10);
+          padding: rem(15);
+          font-size: rem(18);
+          border-radius: rem(7) rem(7) 0 rem(7);
+          background-color: $base-color;
+          transition: 0.5s all;
+          @include media_query($md) {
+            font-size: rem(14);
+            padding: rem(15) rem(10);
+          }
+          @include media_query($sm) {
+            border-radius: rem(7);
+            margin: 0 rem(1);
+            padding: rem(10) rem(1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          a {
+            letter-spacing: rem(2);
+            @include media_query($md) {
+              letter-spacing: rem(1);
+            }
+            br {
+              display: none;
+              @include media_query($sm) {
+                display: block;
+              }
+            }
+          }
+        }
+        li::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 5%;
+          transform: translateY(-50%);
+          transform: rotate(90deg);
+          border: 5px solid transparent;
+          border-left: 7px solid $text-color1;
+          transition: 0.5s all;
+          @include media_query($sm) {
+            display: none;
+          }
+        }
+        li:hover {
+          background-color: $main-color1-down;
+          transition: 0.5s all;
+        }
+        li:hover::before {
+          transform: rotate(90deg) translateX(rem(5));
+        }
+      }
+    }
+  }
+  .features_container {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    padding-top: rem(140);
+    @include media_query($sm) {
+      padding-top: rem(50);
+    }
+    h2 {
+      margin: 0 auto;
+      max-width: 490px;
+      @include media_query($sm) {
+        max-width: 320px;
+      }
+      span {
+        position: relative;
+        display: block;
+        font-size: rem(32);
+        letter-spacing: rem(3);
+        text-align: center;
+        background-color: $main-color1-down;
+        border-radius: rem(30) 0 rem(30) 0;
+        padding: rem(15) rem(84) rem(19) rem(80);
+        @include media_query($sm) {
+          font-size: rem(20);
+          padding: rem(10) rem(0) rem(15) rem(0);
+        }
+      }
+      span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: rem(2) solid $text-color1;
+        border-radius: rem(30) 0 rem(30) 0;
+        top: rem(-4);
+        left: rem(-4);
+      }
+    }
+    .features_list {
+      margin: rem(50) 0;
+      padding: rem(20) rem(28);
+      background-color: $main-color1-down;
+      border-radius: rem(25);
+      @include media_query($sm) {
+        padding: rem(14);
+        max-width: 500px;
+        margin: rem(50) auto;
+      }
+      ul {
+        background-color: #fff;
+        border-radius: rem(20);
+        border: rem(2) solid $text-color1;
+        padding: rem(56) 0 rem(90) 0;
+        li {
+          display: flex;
+          justify-content: left;
+          padding-top: rem(34);
+          align-items: center;
+          max-width: 560px;
+          margin: 0 auto;
+          @include media_query($sm) {
+            display: block;
+            text-align: center;
+          }
+          .number_circle {
+            font-family: $font-poppin;
+            width: rem(60);
+            height: rem(60);
+            line-height: rem(60);
+            text-align: center;
+            color: $main-color1-up;
+            border-radius: rem(100);
+            border: rem(2) solid $main-color1-up;
+            @include media_query($sm) {
+              margin: 0 auto;
+              width: rem(40);
+              height: rem(40);
+              line-height: rem(38);
+              font-size: rem(12);
+            }
+          }
+          .features_text {
+            padding-left: rem(32);
+            font-size: rem(18);
+            font-weight: bold;
+            @include media_query($sm) {
+              padding-left: 0;
+              padding-top: rem(16);
+              font-size: rem(16);
+            }
+            span {
+              color: $main-color1-up;
+            }
+            .br {
+              display: none;
+              @include media_query($sm) {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+    .explanatory_text_area {
+      letter-spacing: rem(3);
+      line-height: rem(30);
+      text-align: center;
+      @include media_query($sm) {
+        padding: 0 rem(10);
+        margin: 0 auto;
+        letter-spacing: rem(2);
+        text-align: left;
+      }
+      .explanatory_text {
+        text-align: center;
+        font-size: rem(15);
+        @include media_query($sm) {
+          font-size: rem(14);
+        }
+      }
+      .cautionary_note {
+        font-size: rem(12);
+        @include media_query($sm) {
+          font-size: rem(11);
+        }
+      }
+    }
+  }
+  .dog_list_wrap {
+    margin-top: rem(100);
+    .dog_list {
+      background-color: $main-color1-down;
+      margin-left: rem(100);
+      padding: rem(80) rem(30);
+      border-top-left-radius: rem(100);
+      @include media_query($md) {
+        margin-left: 0;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        @include media_query($sm) {
+          display: block;
+        }
+        .Vertical_bar {
+          border-left: 0.5px solid;
+          border-color: $main-color1-up;
+          @include media_query($sm) {
+            border-left: 0px;
+            border-bottom: 0.5px solid;
+            border-color: $main-color1-up;
+            max-width: rem(350);
+            margin: 0 auto;
+            margin-top: rem(40);
+          }
+        }
+        .dog_img_wrap {
+          width: rem(330);
+          @include media_query($sm) {
+            margin: 0 auto;
+            width: auto;
+            max-width: rem(450);
+            margin-top: rem(40);
+          }
+          .dog_img {
+            position: relative;
+            aspect-ratio: calc(250 / 190);
+            max-width: rem(250);
+            margin: 0 rem(40);
+            @include media_query($sm) {
+              max-width: rem(330);
+              margin: 0 auto;
+            }
+            .img {
+              border-radius: rem(10);
+            }
+          }
+          .dog_text_wrap {
+            .dog_text {
+              text-align: center;
+              color: $main-color1-up;
+              font-size: rem(18);
+              margin-bottom: rem(5);
+              @include media_query($md) {
+                font-size: rem(16);
+              }
+            }
+            span {
+              padding: rem(14) rem(10) 0 rem(10);
+              background-image: url(/common/svg/hotel/paws.svg);
+              background-repeat: no-repeat;
+              background-size: rem(32);
+              font-weight: bold;
+            }
+          }
+          .dog_text_2 {
+            font-size: rem(12);
+            margin-left: rem(40);
+            @include media_query($md) {
+              font-size: rem(10);
+              margin-left: rem(40);
+            }
+            @include media_query($sm) {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .dotted_circle2 {
+      position: relative;
+      max-width: rem(154);
+      aspect-ratio: calc(154 / 279);
+      margin-top: rem(-80);
+      @include media_query($md) {
+        display: none;
+      }
+    }
+  }
+  .vip_room {
+    max-width: rem(1000);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: rem(2) solid;
+    border-radius: rem(15);
+    border-color: $text-color1;
+    padding: rem(40);
+    margin-bottom: rem(120);
+    @include media_query($lg) {
+      padding: rem(40) rem(20);
+      width: 90%;
+    }
+    @include media_query($md) {
+      padding: rem(40) rem(20);
+      display: block;
+      width: 60%;
+      margin-top: rem(100);
+      padding-top: rem(80);
+    }
+    @include media_query($sm) {
+      width: 93%;
+      padding: rem(40) rem(20);
+    }
+    .vip_text_wrap {
+      .vip_text_img {
+        position: relative;
+        aspect-ratio: calc(478 / 81);
+        max-width: rem(478);
+        @include media_query($md) {
+          margin: 0 auto;
+          margin-top: rem(-120);
+        }
+        @include media_query($sm) {
+          aspect-ratio: calc(300 / 81);
+          max-width: rem(300);
+          margin-top: rem(-80);
+        }
+      }
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(25);
+        @include media_query($sm) {
+          gap: rem(10);
+        }
+        @include media_query($md) {
+          margin-top: rem(40);
+        }
+        .horizontal_bar {
+          border-top: rem(2) solid;
+          border-color: $main-color1-up;
+          width: rem(60);
+          @include media_query($sm) {
+            width: rem(20);
+          }
+        }
+        .horizontal_bar::after {
+          content: "";
+          flex-grow: 1;
+          height: 3px;
+        }
+        span {
+          color: $main-color1-up;
+          font-size: rem(20);
+          @include media_query($sm) {
+            font-size: rem(17);
+          }
+        }
+      }
+      ul {
+        li {
+          margin-top: rem(12);
+          display: flex;
+          @include media_query($sm) {
+            margin-left: rem(40);
+          }
+          @include media_query($pl2) {
+            margin-left: 0;
+          }
+        }
+        span {
+          margin-left: rem(10);
+          @include media_query($sm) {
+            font-size: rem(15);
+          }
+          .br {
+            display: none;
+            @include media_query($sm) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .vip_text_wrap2 {
+      display: flex;
+      margin-top: rem(30);
+      align-items: center;
+      @include media_query($md) {
+        margin-top: 0;
+        margin: rem(30) 0;
+      }
+      @include media_query($sm) {
+        flex-direction: column-reverse;
+      }
+      .cautionary_note_2 {
+        font-size: rem(12);
+        @include media_query($sm) {
+          font-size: rem(10);
+        }
+        span {
+          display: inline-block;
+          vertical-align: top;
+          .br2 {
+            @include media_query($sm) {
+              display: none;
+            }
+          }
+        }
+      }
+      .one_night_price {
+        display: flex;
+        .one_night {
+          padding: rem(9) rem(5);
+          text-align: center;
+          background-color: $main-color1-up;
+          color: $base-color;
+          -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+          border-radius: rem(5);
+          font-size: rem(12);
+          margin-left: rem(30);
+        }
+        .price {
+          margin-left: rem(5);
+          .font-26 {
+            font-size: rem(26);
+          }
+        }
+      }
+    }
+  }
+  .dog04 {
+    margin-left: rem(40);
+    position: relative;
+    aspect-ratio: calc(380 / 341);
+    width: rem(380);
+    height: rem(341);
+    @include media_query($md) {
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    .img {
+      border-radius: rem(10);
+    }
+  }
+  .if_wanhouse {
+    margin-bottom: rem(70);
+    @include media_query($sm) {
+      margin-bottom: 0;
+    }
+    .if_wanhouse_text {
+      text-align: center;
+      .if_wanhouse_bgc {
+        background-color: $main-color1-down;
+        padding: rem(80) rem(20);
+        @include media_query($sm) {
+          padding: rem(50) rem(20);
+        }
+        h3 {
+          letter-spacing: rem(2);
+          .text_wrap {
+            position: relative;
+            display: inline-block;
+            .font-32 {
+              font-size: rem(32);
+              color: $main-color2;
+              font-weight: 500;
+              @include media_query($sm) {
+                font-size: rem(24);
+              }
+              .br {
+                display: none;
+                @include media_query($sm) {
+                  display: block;
+                }
+              }
+              .font-54 {
+                font-size: rem(54);
+                font-weight: bold;
+                @include media_query($sm) {
+                  font-size: rem(38);
+                }
+              }
+            }
+            .font-32::before {
+              content: "";
+              position: absolute;
+              background: $main-color2;
+              width: rem(3);
+              height: rem(60);
+              transform: rotate(-32deg);
+              bottom: 0;
+              left: rem(-40);
+              @include media_query($sm) {
+                transform: rotate(-16deg);
+                left: rem(-20);
+                width: rem(2);
+              }
+            }
+            .font-32::after {
+              content: "";
+              position: absolute;
+              background: $main-color2;
+              width: rem(3);
+              height: rem(60);
+              transform: rotate(32deg);
+              bottom: 0;
+              right: rem(-40);
+              @include media_query($sm) {
+                transform: rotate(16deg);
+                right: rem(-20);
+                width: rem(2);
+              }
+            }
+          }
+        }
+        .font-18 {
+          padding-top: rem(56);
+          line-height: rem(35);
+          font-size: rem(18);
+          @include media_query($sm) {
+            font-size: rem(15);
+          }
+          .br {
+            display: none;
+            @include media_query($sm) {
+              display: block;
+            }
+          }
+          .br2 {
+            display: none;
+            @include media_query($md) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .if_wanhouse2_wrap {
+      padding: 0 rem(100) rem(200) rem(100);
+      text-align: center;
+      position: relative;
+      @include media_query($sm) {
+        padding: 0 rem(20) rem(100) rem(20);
+      }
+      .if_wanhouse2 {
+        padding: rem(60) 0;
+        position: relative;
+        display: inline-block;
+        letter-spacing: rem(2);
+        .font-18 {
+          font-size: rem(18);
+          margin-bottom: rem(50);
+          .font-26 {
+            font-size: rem(26);
+            font-weight: bold;
+          }
+        }
+        .if_wanhouse2_area {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          gap: rem(5);
+          margin-bottom: rem(50);
+          .phone_icon {
+            width: rem(24);
+            height: rem(24);
+          }
+          .font-19 {
+            font-size: rem(19);
+          }
+          .speech_bubble {
+            aspect-ratio: calc(338 / 79);
+            z-index: -1;
+            position: absolute;
+            top: -70%;
+          }
+        }
+        .font-21 {
+          font-size: rem(21);
+          .font-29 {
+            font-size: rem(29);
+            color: $accent-color;
+            font-weight: bold;
+          }
+        }
+        .people_illust {
+          position: absolute;
+          aspect-ratio: calc(123 / 150);
+          max-width: rem(123);
+          max-height: rem(150);
+          top: 60%;
+          left: -20%;
+          @include media_query($md) {
+            top: 100%;
+            left: -10%;
+          }
+          @include media_query($sm) {
+            max-width: rem(70);
+            left: 10%;
+            top: 90%;
+          }
+        }
+        .dog_illust {
+          position: absolute;
+          aspect-ratio: calc(125 / 98);
+          max-width: rem(125);
+          max-height: rem(98);
+          top: 70%;
+          right: -20%;
+          @include media_query($md) {
+            top: 100%;
+            right: -10%;
+          }
+          @include media_query($sm) {
+            max-width: rem(82);
+            right: 10%;
+            top: 90%;
+          }
+        }
+      }
+      .dotted_circle3 {
+        position: absolute;
+        aspect-ratio: calc(260 / 426);
+        left: 0;
+        top: 0;
+        z-index: -1;
+        @include media_query($md) {
+          top: 40%;
+          max-width: rem(180);
+        }
+        @include media_query($sm) {
+          aspect-ratio: calc(120 / 198);
+          max-width: rem(120);
+        }
+      }
+      .dotted_circle4 {
+        position: absolute;
+        aspect-ratio: calc(306 / 319);
+        right: 0;
+        top: 30%;
+        z-index: -1;
+        @include media_query($md) {
+          top: 0;
+          max-width: rem(220);
+        }
+        @include media_query($sm) {
+          aspect-ratio: calc(160 / 166);
+          max-width: rem(160);
+        }
+      }
+    }
+  }
+  .hotel_day {
+    background-image: url(/common/img/hotel/hotel_bg.png);
+    background-size: cover;
+    padding: 0 rem(50) rem(70) rem(50);
+    h2 {
+      margin: 0 auto;
+      padding-top: rem(80);
+      max-width: 490px;
+      @include media_query($sm) {
+        max-width: 320px;
+      }
+      span {
+        position: relative;
+        display: block;
+        font-size: rem(32);
+        letter-spacing: rem(3);
+        text-align: center;
+        background-color: $main-color1-down;
+        border-radius: rem(30) 0 rem(30) 0;
+        padding: rem(15) rem(84) rem(19) rem(80);
+        @include media_query($sm) {
+          font-size: rem(20);
+          padding: rem(10) rem(0) rem(15) rem(0);
+        }
+      }
+      span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: rem(2) solid $text-color1;
+        border-radius: rem(30) 0 rem(30) 0;
+        top: rem(-4);
+        left: rem(-4);
+      }
+    }
+    .hotel_day_area {
+      background-color: $base-color;
+      max-width: rem(1000);
+      margin: rem(-30) auto 0 auto;
+      padding: rem(100) 0;
+      border-radius: rem(10);
+      ul {
+        max-width: rem(900);
+        margin: 0 auto;
+        padding: rem(40);
+        @include media_query($sm) {
+        }
+        li {
+          .hotel_day_text {
+            display: flex;
+            gap: rem(60);
+            flex-wrap: wrap;
+            margin-bottom: rem(70);
+            justify-content: space-between;
+            @include media_query($md) {
+              justify-content: center;
+            }
+            @include media_query($sm) {
+              gap: rem(10);
+              margin-left: rem(80);
+              margin-bottom: rem(40);
+              justify-content: left;
+            }
+            .hotel_img {
+              aspect-ratio: calc(325 / 218);
+              max-width: rem(325);
+              @include media_query($sm) {
+                aspect-ratio: calc(432 / 288);
+                max-width: rem(432);
+              }
+              .img {
+                border-radius: rem(10);
+              }
+            }
+            dl {
+              width: rem(435);
+              @include media_query($sm) {
+                width: rem(325);
+              }
+              dt {
+                font-size: rem(24);
+                color: $main-color1-up;
+                margin-bottom: rem(20);
+              }
+              dd {
+                p {
+                  font-size: rem(15);
+                  line-height: rem(30);
+                  margin-bottom: rem(15);
+                }
+                .cautionary_note_3 {
+                  display: flex;
+                  span {
+                    font-size: rem(12);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+.img {
+  position: relative;
+}

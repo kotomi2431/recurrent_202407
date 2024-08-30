@@ -1,0 +1,37 @@
+@use "../base/vars" as *;
+
+
+.fv_dogrun {
+    position: relative;
+    padding-top: 135px;
+
+    .insta {
+        width: 3%;
+        position: fixed;
+        aspect-ratio: calc(30/113);
+        margin: 185px 0 0 35px;
+        z-index: 10000;
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        @include media_query($lg) {
+            margin: 120px 0 0 35px;
+        }
+
+        @include media_query($sm) {
+            display: none;
+        }
+    }
+
+    .fv_dogrun_img {
+        position: relative;
+        aspect-ratio: calc(1005/378);
+        width: 73%;
+        margin: 0 0 0 auto;
+
+    }
+}

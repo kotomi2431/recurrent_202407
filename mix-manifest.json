@@ -1,4 +1,5 @@
 {
-    "/public/common/js/script.js": "/public/common/js/script.js",
+    "/public/common/js/common.js": "/public/common/js/common.js",
+    "/public/common/js/top.js": "/public/common/js/top.js",
     "/public/common/css/style.css": "/public/common/css/style.css"
 }

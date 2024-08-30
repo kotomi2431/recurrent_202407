@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ペットホテル | WANHOUSE</title>
+
+    <link rel="stylesheet" href="../common/css/style.css" />
+    <link rel="stylesheet" href="../common/js/common.js" />
+    <script src="../common/js/common.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- headerここから -->
+    <header>
+      <div class="header_wrap">
+        <div class="header_logo">
+          <a href="../index.html"
+            ><img src="../common/svg/common/header_logo.svg" alt="WAN HOUSE"
+          /></a>
+        </div>
+        <div class="header_nav">
+          <a href="tel:08200000000" class="header_tel">
+            <img
+              src="../common/img/common/header_tel.png"
+              alt="082-0000-0000"
+            />
+            <img
+              src="../common/img/common/header_tel-hover.png"
+              alt="082-0000-0000"
+            />
+          </a>
+          <nav>
+            <ul>
+              <li>
+                <a href="../concept/index.html">
+                  <span class="nav_hover"
+                    ><img src="../common/svg/common/nav-hover_icon.svg" alt=""
+                  /></span>
+                  <span class="nav_ja">コンセプト</span>
+                  <span class="nav_en">concept</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_hover"
+                    ><img src="../common/svg/common/nav-hover_icon.svg" alt=""
+                  /></span>
+                  <span class="nav_ja">ドッグラン</span>
+                  <span class="nav_en">dog run</span>
+                </a>
+              </li>
+              <li>
+                <a href="../hotel/index.html">
+                  <span class="nav_hover"
+                    ><img src="../common/svg/common/nav-hover_icon.svg" alt=""
+                  /></span>
+                  <span class="nav_ja">ペットホテル</span>
+                  <span class="nav_en">pet hotel</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_hover"
+                    ><img src="../common/svg/common/nav-hover_icon.svg" alt=""
+                  /></span>
+                  <span class="nav_ja">トリミング</span>
+                  <span class="nav_en">trimming</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_hover"
+                    ><img src="../common/svg/common/nav-hover_icon.svg" alt=""
+                  /></span>
+                  <span class="nav_ja">ギャラリー</span>
+                  <span class="nav_en">gallery</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_hover"
+                    ><img src="../common/svg/common/nav-hover_icon.svg" alt=""
+                  /></span>
+                  <span class="nav_ja">お知らせ</span>
+                  <span class="nav_en">news</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_hover"
+                    ><img src="../common/svg/common/nav-hover_icon.svg" alt=""
+                  /></span>
+                  <span class="nav_ja">運営について</span>
+                  <span class="nav_en">info&access</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header_wrap_sp">
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-expanded="flase"
+          aria-controls="nav_sp"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav
+          class="nav_sp"
+          id="nav_sp"
+          aria-hidden="true"
+          aria-labelledby="hamburger"
+        >
+          <div class="nav_wrap">
+            <ul>
+              <li>
+                <a href="../concept/index.html">
+                  <span class="nav_ja">コンセプト</span>
+                  <span class="nav_en">concept</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_ja">ドッグラン</span>
+                  <span class="nav_en">dog run</span>
+                </a>
+              </li>
+              <li>
+                <a href="../hotel/index.html">
+                  <span class="nav_ja">ペットホテル</span>
+                  <span class="nav_en">pet hotel</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_ja">トリミング</span>
+                  <span class="nav_en">trimming</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_ja">ギャラリー</span>
+                  <span class="nav_en">gallery</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_ja">お知らせ</span>
+                  <span class="nav_en">news</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="nav_ja">運営について</span>
+                  <span class="nav_en">info&access</span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="nav_insta"
+              ><img src="../common/svg/common/header_insta.svg" alt="instagram"
+            /></a>
+            <div class="contact_group">
+              <a href="tel:08200000000" class="nav_tel"
+                ><img
+                  src="../common/svg/common/header_contact.svg"
+                  alt="082-0000-0000"
+              /></a>
+              <a href="#">
+                <div class="form">
+                  <span class="icon"
+                    ><img
+                      src="../common/svg/common/header_icon.svg"
+                      alt="お問い合わせ"
+                  /></span>
+                  <p>ご予約・お問い合わせフォーム</p>
+                  <span class="arrow"
+                    ><img
+                      src="../common/svg/common/contact_arrow.svg"
+                      alt="矢印"
+                  /></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- headerここまで -->
+
+    <!-- ご予約お問い合わせフォーム(固定)ここから -->
+    <div class="reserve-btn fade2">
+      <a href="#">
+        <div class="reserve_wrap">
+          <span class="reserve_icon"
+            ><img src="../common/svg/common/header_icon.svg" alt="" /></span
+          >ご予約・お問い合わせ フォーム
+        </div>
+      </a>
+    </div>
+    <div class="reserve-btn_sp fade3">
+      <div class="sp_wrap">
+        <a href="#">
+          <div class="reserve_wrap">
+            <span class="reserve_icon"
+              ><img src="../common/svg/common/header_icon.svg" alt="" /></span
+            >ご予約・お問い合わせ<br />フォームはこちら
+          </div>
+        </a>
+        <a href="tel:08200000000">
+          <div class="tell_wrap">
+            <img
+              src="../common/svg/common/header_contact.svg"
+              alt="082-0000-0000"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <main id="hotel" class="hotel">
+      <section class="hotel_fv">
+        <div class="fv_img">
+          <div class="instagram_icon">
+            <a href="">
+              <img
+                class="img"
+                src="/common/img/hotel/instagram_icon.png"
+                alt="インスタグラムのアイコン"
+              />
+            </a>
+          </div>
+          <div class="fv_dog">
+            <picture>
+              <source
+                srcset="/common/img/hotel/hotel_fv.jpg"
+                type="image/jpg"
+                media="(min-width: 769px)"
+              />
+              <source
+                srcset="/common/img/hotel/hotel_fv_sp.jpg"
+                type="image/jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="img"
+                src="/common/img/hotel/hotel_fv_sp.jpg"
+                alt="ファーストビュー"
+              />
+            </picture>
+          </div>
+          <h2 class="fv_text">
+            <span class="hotel_title">PET HOTEL</span>
+            <p>ペットホテル</p>
+          </h2>
+          <ol class="breadcrumb_link">
+            <li><a href="../index.html">トップ</a></li>
+            <li>＞</li>
+            <li class="font-color">ペットホテル</li>
+          </ol>
+        </div>
+        <div class="dotted_circle">
+          <img
+            class="img"
+            src="/common/img/hotel/dotted_circle.png"
+            alt="点線の円"
+          />
+        </div>
+        <div class="container">
+          <ul>
+            <li><a href="">特徴</a></li>
+            <li>
+              <a href="">ホテル<br class="br" />の１日</a>
+            </li>
+            <li>
+              <a href="">宿泊<br class="br" />プラン</a>
+            </li>
+            <li>
+              <a href="">注意<br class="br" />事項</a>
+            </li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="features_container">
+        <h2><span>ペットホテルの特徴</span></h2>
+        <div class="features_list">
+          <ul>
+            <li>
+              <div class="number_circle">01</div>
+              <div class="features_text">
+                <p>個室で<span>おうちで過ごすように</span>手厚くケア</p>
+              </div>
+            </li>
+            <li>
+              <div class="number_circle">02</div>
+              <div class="features_text">
+                <p>
+                  ストレスが<br class="br" />少しでも減るよう、<br /><span
+                    >全室ゆったり大きめゲージ</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="number_circle">03</div>
+              <div class="features_text">
+                <p>
+                  事前連絡で<br />
+                  <span
+                    >24時間<br class="br" />チェックイン・チェックアウト<br
+                      class="br" /></span
+                  >可能！
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="number_circle">04</div>
+              <div class="features_text">
+                <p>
+                  日帰り・宿泊はもちろん、<br />
+                  連泊・ロングステイも<span>柔軟に対応</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="explanatory_text_area">
+          <div class="explanatory_text">
+            WANHOUSEのペットホテルでは<br />
+            飼い主様と離れて過ごすワンちゃん達の不安やストレスが少しでも減るよう、<br />
+            ドッグランで楽しく運動をしたり、のんびりリラックスして過ごせる全室個室です。<br />
+            ゲージは快適さを求めて大きめでゆったりな造りになっています。<br />
+            食欲を保つためにも日頃食べ慣れているお食事を必要量お持ちいただくことをお勧めしております<br />
+            が、当店にて取り揃えのフードを給餌させていただくことも可能です。<br />
+            お気に入りのタオルや毛布、クッションなどございましたら<br />
+            ワンちゃんが落ち着くためにもお持ち込みください。
+          </div>
+          <span class="cautionary_note"
+            >※お持ち込みいただいた物品をワンちゃんが使用している際の破損等につきましては責任は負いかねます。</span
+          >
+        </div>
+      </section>
+      <section class="dog_list_wrap">
+        <div class="dog_list">
+          <ul>
+            <li class="dog_img_wrap">
+              <div class="dog_text_wrap">
+                <div class="dog_text"><span>ドッグランも！</span></div>
+              </div>
+              <div class="dog_img">
+                <img
+                  class="img"
+                  src="/common/img/hotel/dog01.jpg"
+                  alt="犬の画像１"
+                />
+              </div>
+              <span class="dog_text_2">※プランに含まれます。</span>
+            </li>
+            <li class="Vertical_bar"></li>
+            <li class="dog_img_wrap">
+              <div class="dog_text_wrap">
+                <div class="dog_text"><span>トリミングもできる！</span></div>
+              </div>
+              <div class="dog_img">
+                <img
+                  class="img"
+                  src="/common/img/hotel/dog02.jpg"
+                  alt="犬の画像２"
+                />
+              </div>
+              <span class="dog_text_2">※別途費用がかかります。</span>
+            </li>
+            <li class="Vertical_bar"></li>
+            <li class="dog_img_wrap">
+              <div class="dog_text_wrap">
+                <div class="dog_text">
+                  <span>ゆったり全室個室で手厚くケア</span>
+                </div>
+              </div>
+              <div class="dog_img">
+                <img
+                  class="img"
+                  src="/common/img/hotel/dog03.jpg"
+                  alt="犬の画像３"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="dotted_circle2">
+          <img
+            class="img"
+            src="/common/img/hotel/dotted_circle2.png"
+            alt="点線の円"
+          />
+        </div>
+      </section>
+      <section class="vip_room">
+        <div class="vip_text_wrap">
+          <div class="vip_text_img">
+            <picture>
+              <source
+                srcset="/common/img/hotel/vip_text_img.png"
+                type="image/png"
+                media="(min-width: 769px)"
+              />
+              <source
+                srcset="/common/img/hotel/vip_text_img_sp.png"
+                type="image/png"
+                media="(min-width: 768px)"
+              />
+              <img
+                class="img"
+                src="/common/img/hotel/vip_text_img_sp.png"
+                alt="VIPルームテキスト"
+              />
+            </picture>
+          </div>
+          <h3>
+            <div class="horizontal_bar"></div>
+            <span>VIPルームご利用のメリット</span>
+            <div class="horizontal_bar"></div>
+          </h3>
+          <ul>
+            <li>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                >
+                  <path
+                    d="M6,0A6,6,0,1,1,0,6,6,6,0,0,1,6,0Z"
+                    fill="#c79f65"
+                  ></path>
+                </svg>
+              </div>
+              <span
+                >多頭飼いのワンちゃんもまとまって一室でお預かり可能！<br />
+                お家と同じようにみんなで過ごせます。</span
+              >
+            </li>
+            <li>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                >
+                  <path
+                    d="M6,0A6,6,0,1,1,0,6,6,6,0,0,1,6,0Z"
+                    fill="#c79f65"
+                  ></path>
+                </svg>
+              </div>
+              <span
+                >体の大きな、大型犬・超大型犬も<br
+                  class="br"
+                />ゆったり過ごせる広さ！</span
+              >
+            </li>
+          </ul>
+          <div class="vip_text_wrap2">
+            <p class="cautionary_note_2">
+              <span>※</span
+              ><span
+                >犬種や多頭預かりなど場合により<br
+                  class="br2"
+                />割引などご用意しております。<br class="br2" />
+                詳しくはお問い合わせください。
+              </span>
+            </p>
+            <div class="one_night_price">
+              <span class="one_night">１泊</span>
+              <div class="price">
+                <span class="font-26">11,000円 </span>
+                <span>（税込）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dog04">
+          <img class="img" src="/common/img/hotel/dog04.jpg" alt="犬の画像４" />
+        </div>
+      </section>
+      <section class="if_wanhouse">
+        <div class="if_wanhouse_text">
+          <div class="if_wanhouse_bgc">
+            <h3>
+              <div class="text_wrap">
+                <p class="font-32">
+                  WANHOUSEなら<br class="br" /><span class="font-54">
+                    24時間</span
+                  >対応可能！
+                </p>
+              </div>
+            </h3>
+            <p class="font-18">
+              通常のペットホテルでは<br
+                class="br"
+              />決まった時間にしかチェックイン・チェックアウトができず、<br />「旅行の飛行機の時間に合わせることが難しい」「親戚の家に預けた」<br
+                class="br2"
+              />というケースも。。
+            </p>
+          </div>
+        </div>
+        <div class="if_wanhouse2_wrap">
+          <div class="if_wanhouse2">
+            <p class="font-18">
+              でも<span class="font-26">”WANHOUSE”</span>なら、
+            </p>
+            <div class="if_wanhouse2_area">
+              <div class="phone_icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 26.295 26.295"
+                >
+                  <path
+                    d="M25.545,18.582l-5.752-2.465a1.233,1.233,0,0,0-1.438.354l-2.547,3.112a19.037,19.037,0,0,1-9.1-9.1L9.82,7.936A1.23,1.23,0,0,0,10.174,6.5L7.709.745A1.241,1.241,0,0,0,6.3.031L.955,1.264A1.233,1.233,0,0,0,0,2.465,23.828,23.828,0,0,0,23.831,26.3a1.233,1.233,0,0,0,1.2-.955L26.265,20a1.248,1.248,0,0,0-.72-1.418Z"
+                    transform="translate(0 0)"
+                  ></path>
+                </svg>
+              </div>
+              <span class="font-19">事前のご相談・ご連絡で</span>
+              <div class="speech_bubble">
+                <img
+                  class="img"
+                  src="/common/img/hotel/speech_bubble.png"
+                  alt="吹き出し"
+                />
+              </div>
+            </div>
+            <p class="font-21">
+              <span class="font-29"
+                >24時間チェックイン・チェックアウトが可能</span
+              >
+              です！
+            </p>
+            <div class="people_illust">
+              <img
+                class="img"
+                src="/common/svg/hotel/people_illust.svg"
+                alt="人のイラスト"
+              />
+            </div>
+            <div class="dog_illust">
+              <img
+                class="img"
+                src="/common/svg/hotel/dog_illust.svg"
+                alt="犬のイラスト"
+              />
+            </div>
+          </div>
+          <div class="dotted_circle3">
+            <img
+              class="img"
+              src="/common/img/hotel/dotted_circle3.png"
+              alt="点線の円"
+            />
+          </div>
+          <div class="dotted_circle4">
+            <img
+              class="img"
+              src="/common/img/hotel/dotted_circle4.png"
+              alt="点線の円"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="hotel_day">
+        <h2><span>ホテルの１日</span></h2>
+        <div class="hotel_day_area">
+          <ul>
+            <li>
+              <div class="hotel_day_text">
+                <div class="hotel_img">
+                  <img
+                    class="img"
+                    src="/common/img/hotel/hotel_1.png"
+                    alt="ホテルの１日の画像1"
+                  />
+                </div>
+                <dl>
+                  <dt>チェックイン</dt>
+                  <dd>
+                    <p>
+                      ご予約時間にチェックイン。<br />
+                      チェックインの際にはワンちゃんの体調や性格をおうかがいし、<br />
+                      それぞれワンちゃんに合ったケアや見守りを<br />
+                      行わせていただきます。<br />
+                      ワクチン接種証明など忘れずお持ちください。
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="hotel_day_text">
+                <div class="hotel_img">
+                  <img
+                    class="img"
+                    src="/common/img/hotel/hotel_2.png"
+                    alt="ホテルの１日の画像2"
+                  />
+                </div>
+                <dl>
+                  <dt>お友達と一緒にドッグランで運動</dt>
+                  <dd>
+                    <p>
+                      犬種や性格が合うお友達と一緒にドッグランで遊びます。<br />
+                      スタッフはケガに注意し見守らせていただきます。
+                    </p>
+                    <div class="cautionary_note_3">
+                      <span>※</span>
+                      <span
+                        >他のワンちゃんと遊ぶのが苦手など心配な点がございましたら<br />
+                        チェックイン時にお知らせください。</span
+                      >
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="hotel_day_text">
+                <div class="hotel_img">
+                  <img
+                    class="img"
+                    src="/common/img/hotel/hotel_3.png"
+                    alt="ホテルの１日の画像3"
+                  />
+                </div>
+                <dl>
+                  <dt>お昼寝</dt>
+                  <dd>
+                    <p>
+                      個室ゲージに入ってのんびり過ごします。<br />
+                      お昼寝をしたり、お持ち込みいただいた愛用のタオルや毛布で<br />
+                      リラックスしながら休みます。
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="hotel_day_text">
+                <div class="hotel_img">
+                  <img
+                    class="img"
+                    src="/common/img/hotel/hotel_4.png"
+                    alt="ホテルの１日の画像4"
+                  />
+                </div>
+                <dl>
+                  <dt>(ご宿泊の日は)ごはんタイム</dt>
+                  <dd>
+                    <p>
+                      日頃より食べ慣れているお食事を必要量ご準備の上、<br />
+                      お持ちください。<br />
+                      アレルギーや心配な点など注意が必要な場合には<br />
+                      必ずお知らせください。
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="hotel_day_text">
+                <div class="hotel_img">
+                  <img
+                    class="img"
+                    src="/common/img/hotel/hotel_5.png"
+                    alt="ホテルの１日の画像5"
+                  />
+                </div>
+                <dl>
+                  <dt>(お帰りの日は)チェックアウト</dt>
+                  <dd>
+                    <p>
+                      今回も楽しく過ごせたね！<br />
+                      また会えるのを楽しみに、飼い主様のお迎えで<br />
+                      チェックアウトとなります。
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </li>
+            <li>
+              <div class="hotel_day_text">
+                <div class="hotel_img">
+                  <img
+                    class="img"
+                    src="/common/img/hotel/hotel_6.png"
+                    alt="ホテルの１日の画像6"
+                  />
+                </div>
+                <dl>
+                  <dt>就寝</dt>
+                  <dd>
+                    <p>
+                      個室ゲージで就寝します。<br />
+                      お気に入りのタオルや毛布があれば<br />
+                      ワンちゃんもリラックスしやすいので是非お持ち込みください。
+                    </p>
+                  </dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- ご予約お問い合わせフォームここから -->
+    <div class="contact">
+      <div class="circle1">
+        <picture>
+          <source
+            media="(max-width: 1000px)"
+            srcset="../common/svg/common/circle2.svg"
+          />
+          <source
+            media="(min-width: 1001px)"
+            srcset="../common/svg/common/circle1.svg"
+          />
+          <img src="../common/svg/common/circle1.svg" alt="" />
+        </picture>
+      </div>
+      <div class="circle2">
+        <picture>
+          <source
+            media="(max-width: 1000px)"
+            srcset="../common/svg/common/circle1.svg"
+          />
+          <source
+            media="(min-width: 1001px)"
+            srcset="../common/svg/common/circle2.svg"
+          />
+          <img src="../common/svg/common/circle2.svg" alt="" />
+        </picture>
+      </div>
+      <p class="contact_text">
+        ご予約はメール予約フォームにて<br
+          class="sp"
+        />受け付けております。<br />
+        お急ぎの場合や、ご予約以外のお問い合わせは、<br
+          class="sp"
+        />お電話にてご連絡ください。
+      </p>
+      <div class="border1"></div>
+      <div class="contact_flex">
+        <div class="contact_tell">
+          <a href="tel:08200000000">
+            <span class="tel"
+              ><img
+                src="../common/svg/common/footer_tel.svg"
+                alt="082-0000-0000"
+            /></span>
+            <span class="text">受付時間:9:00〜18:00</span>
+          </a>
+        </div>
+        <span class="border2"></span>
+        <div class="contact_form">
+          <a href="#">
+            <div class="form_wrap">
+              <span class="icon"
+                ><img src="../common/svg/common/reserve_icon.svg" alt=""
+              /></span>
+              <span class="text">メール予約フォームはこちら</span>
+              <span class="arrow"
+                ><img src="../common/svg/common/contact_arrow.svg" alt=""
+              /></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ご予約お問い合わせフォームここまで -->
+
+    <!-- footerここから -->
+    <footer>
+      <a href="#" class="footer_topbtn">
+        <picture>
+          <source
+            media="(max-width: 999px)"
+            srcset="../common/svg/common/footer_top-arrow_sp.svg"
+          />
+          <source
+            media="(min-width: 1000px)"
+            srcset="../common/svg/common/footer_top-arrow.svg"
+          />
+          <img
+            src="../common/svg/common/footer_top-arrow.svg"
+            alt="topに戻る"
+          />
+        </picture>
+      </a>
+      <div class="footer_wrap">
+        <div class="footer_logo">
+          <img src="../common/svg/common/footer_logo.svg" alt="" />
+        </div>
+        <div class="footer_group">
+          <div class="footer_info">
+            <div class="footer_access">可部バイパス三入交差点から車で5分</div>
+            <div class="footer_address">
+              <span class="address"
+                ><span class="post_code">〒731-0214 </span
+                >広島市安佐北区可部町大字桐原字山田<br
+                  class="sp"
+                />2022番1</span
+              >
+              <a href="tel:08200000000" class="footer_tel">
+                <img
+                  src="../common/svg/common/footer_tel.svg"
+                  alt="08200000000"
+                />
+                <img
+                  src="../common/svg/common/footer_tel-hover.svg"
+                  alt="08200000000"
+                />
+              </a>
+            </div>
+            <div class="footer_hours">
+              <ul>
+                <li>
+                  <dl>
+                    <dt>
+                      ペットホテル
+                      <div class="slash">
+                        <img
+                          src="../common/svg/common/footer_line.svg"
+                          alt=""
+                        />
+                      </div>
+                    </dt>
+                    <div class="hour">
+                      <dd>
+                        <span class="kind">営業時間</span
+                        ><span class="time">9:00~18:00</span>
+                      </dd>
+                      <dd>
+                        <span class="day">休業日</span
+                        ><span class="close">不定休（※予約制）</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      ドッグラン
+                      <div class="slash">
+                        <img
+                          src="../common/svg/common/footer_line.svg"
+                          alt=""
+                        />
+                      </div>
+                    </dt>
+                    <div class="hour">
+                      <dd>
+                        <span class="kind">営業時間</span
+                        ><span class="time"
+                          >9:00~18:00 <br /><span class="time2"
+                            >（ただし冬季は10:00~17:00）</span
+                          ></span
+                        >
+                      </dd>
+                      <dd>
+                        <span class="day">休業日</span
+                        ><span class="close">不定休</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      トリミング
+                      <div class="slash">
+                        <img
+                          src="../common/svg/common/footer_line.svg"
+                          alt=""
+                        />
+                      </div>
+                    </dt>
+                    <div class="hour">
+                      <dd>
+                        <span class="kind">営業時間</span
+                        ><span class="time">9:00~18:00</span>
+                      </dd>
+                      <dd>
+                        <span class="day">休業日</span
+                        ><span class="close">不定休（※完全予約制）</span>
+                      </dd>
+                    </div>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26293.51314996411!2d132.5007078743164!3d34.5361029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a8364b5351507%3A0x7ec247deb4f46b30!2zV0FOSE9VU0Uo44Ov44Oz44OP44Km44K5KQ!5e0!3m2!1sja!2sjp!4v1723100172736!5m2!1sja!2sjp"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <a href="#">サイトポリシー</a>COPYRIGHT (C) WANHOUSE
+        </div>
+      </div>
+    </footer>
+    <!-- footerここまで -->
+  </body>
+</html>

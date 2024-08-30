@@ -1,0 +1,253 @@
+@use '../base/vars'as *;
+
+#concept{
+    .kv{
+        position: relative;
+        padding-top: rem(135);
+
+        @include media_query($sm){
+            padding-top: 0;
+        }
+
+        .insta{
+            position: fixed;
+            top: 30%;
+            left: 3%;
+            z-index: 10;
+
+            @include media_query($sm){
+                display: none;
+            }
+        }
+    }
+    .kv_wrap{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        gap: rem(53);
+        
+        .text{      
+            margin-top: rem(20);  
+            
+            .pan{
+                font-size: rem(12);
+                
+                @include media_query($sm){
+                    display: none;
+                }
+            }
+            .title{
+                position: absolute;
+                margin-top: rem(91);
+
+                h1{
+                    font-family: $font-poppin;
+                    font-weight: 500;
+                    font-size: rem(70);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .lead{
+        padding: rem(135) 1% rem(75) 5%;
+        position: relative;
+        margin-top: rem(116);
+
+        @include media_query($sm){
+            padding: rem(16) 3% rem(63);
+        }
+
+        .bg{
+            position: absolute;
+            z-index: -1;
+            background-color: $main-color1-down;
+            width: 85%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-top-right-radius: rem(200);
+            border-bottom-right-radius: rem(20);
+        }
+    }
+    .lead_wrap{
+        display: flex;
+        justify-content: center;
+        gap: rem(63);
+        align-items: start;
+        flex-wrap: wrap;
+        @include media_query($sm){
+            gap: rem(40);
+        }
+
+        .textarea{
+            width: 45%;
+
+            @include media_query($sm){
+                width: 100%;
+            }
+
+            .title{
+                font-size: rem(26);
+                font-weight: bold;
+                line-height: 1.6;
+
+                @include media_query($sm){
+                    font-size: rem(20);
+                    line-height: 1.8;
+                }
+            }
+            .text{
+                margin-top: rem(46);
+                line-height: 2.5;
+                width: 70%;
+
+                @include media_query($sm){
+                    font-size: rem(15);
+                    line-height: 2;
+                    width: 100%;
+                }
+            }
+        }
+        .lead_img{
+            width: 45%;
+            max-width: rem(568);
+
+            @include media_query($sm){
+                width: 100%;
+                min-width: rem(320);
+            }
+        }
+    }
+    .point{
+        margin-top: rem(192);
+
+        @include media_query($sm){
+            margin-top: rem(64);
+        }
+        .section_title{
+            font-size: rem(32);
+            font-weight: bold;
+            text-align: center;
+            margin: 0 auto rem(80);
+            padding: rem(31) rem(108);
+            background-color: $main-color1-down;
+            border: 2px solid $text-color1;
+            border-top-left-radius: rem(30);
+            border-bottom-right-radius: rem(30);
+            max-width: rem(495);
+            width: 100%;
+
+            @include media_query($sm){
+                max-width: rem(320);
+                font-size: rem(20);
+                line-height: 2;
+                padding: rem(20) rem(73);
+            }
+        }
+        .grid_group{
+            ul{
+                display: grid;
+                grid-template-columns: repeat(3, 30%);
+                grid-template-rows: 1fr;
+                justify-content: center;
+
+                @include media_query($pl3){
+                    grid-template-rows: repeat(3, 1fr);
+                    grid-template-columns: rem(360);
+                    grid-row-gap:rem(40)
+                }
+                
+                li{
+                    max-width: rem(250);
+                    margin: 0 auto;
+                }
+                .point1 { grid-area: 1 / 1 / 2 / 2; }
+                .point2 { grid-area: 1 / 2 / 2 / 3; }
+                .point3 { grid-area: 1 / 3 / 2 / 4; }
+
+                @include media_query($pl3){
+                    .point1 { grid-area: 1 / 1 / 2 / 2; }
+                    .point2 { grid-area: 2 / 1 / 3 / 2; }
+                    .point3 { grid-area: 3 / 1 / 4 / 2; }
+
+
+                }
+
+            }
+        }
+        .point_img{
+            width: 100%;
+        }
+        .point_title{
+            font-size: rem(18);
+            font-weight: bold;
+            color: $main-color1-up;
+            margin-top: rem(23);
+            text-align: center;
+        }
+        .point_text{
+            font-size: rem(15);
+            margin-top: rem(14);
+        }
+    }
+    .feeling{
+        padding: rem(55) 2% rem(82) 5%;
+        margin-top: rem(196);
+        margin-bottom: rem(192);
+        position: relative;
+        @include media_query($sm){
+            padding: rem(69) 3% 0 3%;
+            margin-bottom: rem(96);
+        }
+        .bg{
+            position: absolute;
+            z-index: -1;
+            background-color: $main-color1-down;
+            width: 45%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-top-right-radius: rem(200);
+            border-bottom-right-radius: rem(20);
+
+            @include media_query($sm){
+                height: 75%;
+                width: 80%;
+            }
+        }
+    }
+    .feeling_flex{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        gap: rem(63);
+        align-items: start;
+        flex-wrap: wrap;
+        @include media_query($sm){
+            gap:rem(40)
+        }
+    }
+    .feeling_textarea{
+        width: 40%;
+        @include media_query($sm){
+            width: 100%;
+        }
+        .feeling_title{
+            font-size: rem(32);
+            font-weight: bold;
+            letter-spacing: rem(1.3);
+
+            @include media_query($sm){
+                text-align: center;
+                font-size: rem(20);
+                line-height: 2;
+            }
+        }
+        .feeling_text{
+            width: 100%;
+            margin-top: rem(85);
+            line-height: 2;
+        }
+    }
+}
