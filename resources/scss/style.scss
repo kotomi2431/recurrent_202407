@@ -6,9 +6,15 @@
 
 @use 'base/reset';
 @use 'base/default';
+@use 'base/base';
 
 
 
+//*------------------------------------*//
+//	common
+//*------------------------------------*//
+@use './common/header';
+@use './common/footer';
 
 
 

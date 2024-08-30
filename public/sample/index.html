@@ -1,14 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./common/css/style.css">
-    <title>サンプルページ</title>
-</head>
-<body>
-    <p class="test">
-        ここは<span class="red">サンプルページ</span>
-    </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../common/css/style.css">
+        <title>大人に贈る至高のG-SHOCK - MR-G | Timepedia</title>
+
+        <script src="../common/js/script.js" defer></script>
+    </head>
+    <body>
+
+        <!-- headerはここのをコピペして使用してください -->
+        <header class="header" id="header">
+            <div class="header_area">
+                <a href="https://www.timepedia.co.jp/" class="home_button">
+                    <img src="../common/img/header/home_icon.svg" alt="home">
+                </a>
+                <div class="header_logo">
+                    <img src="../common/img/header/logo.svg" alt="timepedia">
+                </div>
+            </div>
+        </header>
+        <!-- headerここまで -->
+
+
+
+
+
+        <section style="padding-top: 200px; padding-bottom: 200px; text-align: center;">
+            <!-- PCとSPで画像を切り替える際 pictureタグ -->
+            <div>
+                <h1 style="padding-bottom: 20px;">PCとSPで画像を切り替える際 pictureタグ</h1>
+                <picture>
+                    <source media="(max-width: 360px)" type="image/png" srcset="../common/img/sample/fv01_sp.png, ../common/img/sample/fv01_sp@2x.png 2x">
+                    <source media="(min-width: 361px)" type="image/png" srcset="../common/img/sample/fv01.png, ../common/img/sample/fv01@2x.png 2x">
+                    <img src="../common/img/sample/fv01.png" alt="Timepedia">
+                </picture>
+            </div>
+
+
+            <!-- splide.jsを使用したスライドショーの実装 -->
+            <!-- 
+                ①splide.jsをインストール
+                ②任意のjsファイルに実装jsを記述（今回は resources/js/modules/slide.js に記述し、script.jsで読み込んでいます）
+                ③それぞれのhtmlファイルに読み込みたいjsファイルを読み込む
+            -->
+            <div style="padding-top: 200px;">
+                <h1 style="padding-bottom: 20px;">splide.jsを使用したスライドショーの実装</h1>
+                <div class="splide fv_slide" aria-label="fvスライドショー">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <!-- ここから 自由記述 -->
+                                <div class="fv_img">
+                                    <picture>
+                                        <source media="(max-width: 360px)" type="image/png" srcset="../common/img/sample/fv01_sp.png, ../common/img/sample/fv01_sp@2x.png 2x">
+                                        <source media="(min-width: 361px)" type="image/png" srcset="../common/img/sample/fv01.png, ../common/img/sample/fv01@2x.png 2x">
+                                        <img src="../common/img/sample/fv01.png" alt="Timepedia">
+                                    </picture>
+                                </div>
+                                <!-- ここまで 自由記述 -->
+                            </li>
+                            <li class="splide__slide">
+                                <!-- ここから 自由記述 -->
+                                <div class="fv_img">
+                                    <picture>
+                                        <source media="(max-width: 360px)" type="image/png" srcset="../common/img/sample/fv02_sp.png, ../common/img/sample/fv02_sp@2x.png 2x">
+                                        <source media="(min-width: 361px)" type="image/png" srcset="../common/img/sample/fv02.png, ../common/img/sample/fv02@2x.png 2x">
+                                        <img src="../common/img/sample/fv02.png" alt="Timepedia">
+                                    </picture>
+                                </div>
+                                <!-- ここまで 自由記述 -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- footerはここのをコピペして使用してください -->
+        <footer class="footer" id="footer">
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                        <div class="sns_icon">
+                            <img src="../common/img/footer/line_icon.svg" alt="LINE">
+                        </div>
+                    </a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                        <div class="sns_icon">
+                            <img src="../common/img/footer/insta_icon.svg" alt="instagram">
+                        </div>
+                    </a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                        <div class="sns_icon">
+                            <img src="../common/img/footer/youtube_icon.svg" alt="youtube">
+                        </div>
+                    </a>
+                </li>
+                <li class="footer_item">
+                    <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                        <div class="sns_icon">
+                            <img src="../common/img/footer/tiktok_icon.svg" alt="tiktok">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="https://www.timepedia.co.jp/" class="footer_home--button">home</a>
+
+            <small class="copyright_area">
+                <span class="copyright">Copyright</span> &copy; Timepedia
+            </small>
+        </footer>
+        <!-- footerここまで -->
+    </body>
 </html>
