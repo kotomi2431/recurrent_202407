@@ -1,18 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./common/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../common/css/style.css">
+    <script src="../common/js/script.js" defer></script>
     <title>TOPページ</title>
 </head>
-<body>
-    <p class="test">
-        福田
-    </p>
 
-    <section class="section01">
-        <h1 class="title">タイトル</h1>
-    </section>
+<body>
+    <!-- headerはここのをコピペして使用してください -->
+    <header class="header" id="header">
+        <div class="header_area">
+            <a href="https://www.timepedia.co.jp/" class="home_button">
+                <img src="../common/img/header/home_icon.svg" alt="home">
+            </a>
+            <div class="header_logo">
+                <img src="../common/img/header/logo.svg" alt="timepedia">
+            </div>
+        </div>
+    </header>
+    <!-- headerここまで -->
+
+    <main>
+
+
+
+
+        <div class="kv">
+            <div class="splide fv_slide" aria-label="fvスライドショー">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <!-- ここから 自由記述 -->
+                            <div class="fv_img">
+                                <picture>
+                                    <source media="(max-width:768px)" type="image/png" srcset="../common/img/kv_sp.png">
+                                    <source media="(min-width:769px)" type="image/png" srcset="../common/img/kv.png">
+                                    <img class="img" src="../common/img/kv.png" alt="キービジュアル">
+                                </picture>
+                            </div>
+                            <!-- ここまで 自由記述 -->
+                        </li>
+                        <li class="splide__slide">
+                            <!-- ここから 自由記述 -->
+                            <div class="fv_img">
+                                <picture>
+                                    <source media="(max-width:768px)" type="image/png"
+                                        srcset="../common/img/kv_01_sp.png">
+                                    <source media="(min-width:769px)" type="image/png" srcset="../common/img/kv_01.png">
+                                    <img class="img" src="../common/img/kv_01.png" alt="キービジュアル">
+                                </picture>
+                            </div>
+                            <!-- ここまで 自由記述 -->
+                        </li>
+                        <li class="splide__slide">
+                            <!-- ここから 自由記述 -->
+                            <div class="fv_img">
+                                <picture>
+                                    <source media="(max-width:768px)" type="image/png"
+                                        srcset="../common/img/kv_02_sp.png">
+                                    <source media="(min-width:769px)" type="image/png" srcset="../common/img/kv_02.png">
+                                    <img class="img" src="../common/img/kv_02.png" alt="キービジュアル">
+                                </picture>
+                            </div>
+                            <!-- ここまで 自由記述 -->
+                        </li>
+                        <li class="splide__slide">
+                            <!-- ここから 自由記述 -->
+                            <div class="fv_img">
+                                <picture>
+                                    <source media="(max-width:768px)" type="image/png"
+                                        srcset="../common/img/kv_03_sp.png">
+                                    <source media="(min-width:769px)" type="image/png" srcset="../common/img/kv_03.png">
+                                    <img class="img" src="../common/img/kv_03.png" alt="キービジュアル">
+                                </picture>
+                            </div>
+                            <!-- ここまで 自由記述 -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#">
+                <picture>
+                    <source media="(max-width:768px)" type="image/png" srcset="../common/img/link_sp.png">
+                    <source media="(min-width:769px)" type="image/png" srcset="../common/img/link.png">
+                    <img class="link" src="../common/img/link.png" alt="リンク">
+                </picture>
+            </a>
+        </div>
+
+        <section class="sec01">
+            <h1><img class="h1" src="../common/img/title.svg" alt="大人　G-SHOCK"></h1>
+            <div class="flex">
+                <div class="txt">
+                    <p>大人になったあなたに、<br>MR-Gというご提案。</p>
+                    <p>初めてG-SHOCKを手にした瞬間を、<br>覚えていますか？</p>
+                    <p>初めてG-SHOCKを手に入れた時の高揚感。<br>
+                        タフな相棒を腕に巻き、<br class="sp">海に山に、学校、ドライブ、クラブ、
+                        デート…<br class="sp">日常の全ての時を共に刻んだ日々を<br class="sp">覚えていますか？<br>
+                        大人になりスーツを着る機会が増えた。<br>
+                        後輩や年下の手前、<br class="sp">カジュアルな時計は着けづらくなった。<br>
+                        そんな大人のG-SHOCKファンにこそ<br class="sp">身につけてほしい。<br>
+                        あなたにぴったりな最高峰のMR-Gが、<br class="sp">ここにあります。
+                    </p>
+                </div>
+                <img class="img" src="../common/img/watch/watch_1.png" alt="">
+            </div>
+        </section>
+
+        <section class="sec02">
+            <div class="snap">
+                <h2><img src="../common/img/snap.svg" alt="スナップ"></h2>
+                <p>スナップ</p>
+                <div class="watch_list">
+                    <div class="watch">
+                        <img src="../common/img/watch/watch_2.png" alt="">
+                        <img class="time" src="../common/img/time/time_1.png" alt="">
+                    </div>
+                    <div class="watch">
+                        <img src="../common/img/watch/watch_3.png" alt="">
+                        <img class="time" src="../common/img/time/time_2.png" alt="">
+                    </div>
+                    <div class="watch">
+                        <img src="../common/img/watch/watch_4.png" alt="">
+                        <img class="time" src="../common/img/time/time_3.png" alt="">
+                    </div>
+                    <div class="watch">
+                        <img src="../common/img/watch/watch_5.png" alt="">
+                        <img class="time" src="../common/img/time/time_4.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene01">
+                <img class="scene" src="../common/img/scene_1.svg" alt="シーン１">
+                <img class="location" src="../common/img/business.svg" alt="ビジネス">
+                <img class="time" src="../common/img/time/time_5.png" alt="">
+                <p>MRG-B5000モデルは<br>
+                    一分一秒、“今”の時刻を逃さない。<br>
+                    勝負服の袖からのぞく<br>
+                    磨き上げられたsilverブレスは<br>
+                    ビジネスシーンの着用も余裕でこなす<br>
+                    気品と機能美を併せ持つ。
+                </p>
+                <img class="parts" src="../common/img/parts_1.svg" alt="">
+                <div class="flex">
+                    <img class="wat" src="../common/img/watch/watch_6.png" alt="">
+                    <img class="people" src="../common/img/people/people_1.jpg" alt="">
+                </div>
+                <img class="product_number" src="../common/img/MRG-B5000D.svg" alt="">
+            </div>
+            <div class="scene02">
+                <img class="scene" src="../common/img/scene_2.svg" alt="シーン２">
+                <img class="location" src="../common/img/activity.svg" alt="アクティビティ">
+                <img class="time" src="../common/img/time/time_6.png" alt="">
+                <p>MRG-B5000モデルは<br>
+                    オンもオフもあなたに寄り添う。<br>
+                    多くの人に愛されてきたスクエア<br>
+                    デザインと、初代譲りの存在感は<br>
+                    アクティビティ中の手元も<br>
+                    抜かりなく彩る。<br>
+                </p>
+                <img class="parts" src="../common/img/parts_2.svg" alt="">
+                <div class="flex reverse">
+                    <img class="people" src="../common/img/people/people_2.jpg" alt="">
+                    <img class="wat" src="../common/img/watch/watch_7.png" alt="">
+                </div>
+                <img class="product_number" src="../common/img/MRG-B5000B.svg" alt="">
+            </div>
+            <div class="scene03">
+                <img class="scene" src="../common/img/scene_3.svg" alt="シーン3">
+                <img class="location" src="../common/img/town.svg" alt="タウン">
+                <img class="time" src="../common/img/time/time_7.png" alt="">
+                <p>カジュアルシーンでは遊びゴコロを。<br>
+                    鮮やかなマリンブルーのパーツが<br>
+                    魅力的なMRG-BF1000Rは<br>
+                    その上質さと美しさの中に<br>
+                    “自分らしさ”をプラスしてくれる。。<br>
+                </p>
+                <img class="parts" src="../common/img/parts_3.svg" alt="">
+                <div class="flex">
+                    <img class="wat" src="../common/img/watch/watch_8.png" alt="">
+                    <img class="people" src="../common/img/people/people_3.jpg" alt="">
+                </div>
+                <img class="product_number" src="../common/img/MRG-BF1000R.svg" alt="">
+            </div>
+            <div class="scene04">
+                <img class="scene" src="../common/img/scene_4.svg" alt="シーン4">
+                <img class="location" src="../common/img/holiday.svg" alt="ホリデイ">
+                <img class="time" src="../common/img/time/time_8.png" alt="">
+                <p>（そろそろ、着く頃かな）<br>
+                    秒針のステップが<br>
+                    そのまま逸る鼓動になったようだ。<br>
+                    「勝色」の名を冠するMRG-B2000Bと<br>
+                    特別な夜の時間を楽しもう。<br>
+                </p>
+                <img class="parts" src="../common/img/parts_4.svg" alt="">
+                <div class="flex reverse">
+                    <img class="people" src="../common/img/people/people_4.jpg" alt="">
+                    <img class="wat" src="../common/img/watch/watch_9.png" alt="">
+                </div>
+                <img class="product_number" src="../common/img/MRG-B2000B.svg" alt="">
+            </div>
+            <a href="#" class="btn">
+                商品ページを見る
+            </a>
+
+            <div class="item_list">
+                <div class="item">
+                    <picture>
+                        <source media="(max-width:768px)" type="image/svg" srcset="../common/img/MRG-B5000_01_sp.svg">
+                        <source media="(min-width:769px)" type="image/svg" srcset="../common/img/MRG-B5000_01.svg">
+                        <img class="product_number" src="../common/img/MRG-B5000_01.svg" alt="">
+                    </picture>
+                    <div class="wrap">
+                        <img class="number" src="../common/img/number01.png" alt="">
+
+                        <div class="txt">
+                            <p>より美しく極められた、<br>
+                                伝統のデザイン。</p>
+                            <p>あくなきこだわりが生んだ「極み」という進化。新たな耐衝撃スクエアデザインが、MR-G最高峰のデジタルスタンダードモデルとして誕生。</p>
+                        </div>
+                        <a href="#"><img class="link" src="../common/img/link.png" alt=""></a>
+                    </div>
+                    <picture>
+                        <source media="(max-width:768px)" type="image/png" srcset="../common/img/watch/watch_10_sp.png">
+                        <source media="(min-width:769px)" type="image/png" srcset="../common/img/watch/watch_10.png">
+                        <img class="watch" src="../common/img/watch/watch_10.png" alt="">
+                    </picture>
+                    <a href="#" class="link">
+                        商品ページを見る
+                    </a>
+                </div>
+
+                <div class="item rigth">
+                    <picture>
+                        <source media="(max-width:768px)" type="image/svg" srcset="../common/img/MRG-BF1000R_01_sp.svg">
+                        <source media="(min-width:769px)" type="image/svg" srcset="../common/img/MRG-BF1000R_01.svg">
+                        <img class="product_number" src="../common/img/MRG-BF1000R_01.svg" alt="">
+                    </picture>
+                    <div class="wrap">
+                        <img class="number" src="../common/img/number02.png" alt="">
+
+                        <div class="txt">
+                            <p>チタン装甲を纏った<br>
+                                海のMR-G。</p>
+                            <p>MR-Gが誇るフルメタルの造形美と、ISO規格200m潜水用防水の高気密構造。G-SHOCK最高峰ならではのこだわりを注入したMR-G仕様のダイバーズウオッチ。</p>
+                        </div>
+                        <a href="#"><img class="link" src="../common/img/link.png" alt=""></a>
+                    </div>
+                    <a href="#" class="link">
+                        商品ページを見る
+                    </a>
+                    <picture>
+                        <source media="(max-width:768px)" type="image/png" srcset="../common/img/watch/watch_11_sp.png">
+                        <source media="(min-width:769px)" type="image/png" srcset="../common/img/watch/watch_11.png">
+                        <img class="watch" src="../common/img/watch/watch_11.png" alt="">
+                    </picture>
+                </div>
+
+                <div class="item">
+                    <picture>
+                        <source media="(max-width:768px)" type="image/svg" srcset="../common/img/MRG-B2000B_01_sp.svg">
+                        <source media="(min-width:769px)" type="image/svg" srcset="../common/img/MRG-B2000B_01.svg">
+                        <img class="product_number" src="../common/img/MRG-B2000B_01.svg" alt="">
+                    </picture>
+                    <div class="wrap">
+                        <img class="number" src="../common/img/number03.png" alt="">
+
+                        <div class="txt">
+                            <p>古来のタフネス観が宿る、<br>
+                                「赤備え」モデル。</p>
+                            <p>古来より強さの象徴を意味する、戦国時代の部隊編成である「赤備え」をテーマにしたMR-G。時代を超えて生き続ける唯一無二の強さを表現。</p>
+                        </div>
+                        <a href="#"><img class="link" src="../common/img/link.png" alt=""></a>
+                    </div>
+                    <a href="#" class="link">
+                        商品ページを見る
+                    </a>
+                    <picture>
+                        <source media="(max-width:768px)" type="image/png" srcset="../common/img/watch/watch_12_sp.png">
+                        <source media="(min-width:769px)" type="image/png" srcset="../common/img/watch/watch_12.png">
+                        <img class="watch" src="../common/img/watch/watch_12.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec03">
+            <h2>
+                <picture>
+                    <source media="(max-width:768px)" type="image/svg" srcset="../common/img/voice_sp.svg">
+                    <source media="(min-width:769px)" type="image/svg" srcset="../common/img/voice.svg">
+                    <img src="../common/img/voice.svg" alt="お客様の声">
+                </picture>
+            </h2>
+            <p>MR-Gを購入されたお客様の声</p>
+            <div class="flex">
+                <div class="txt">
+                    <p>勝色の青がとても好きです。<br>
+                        良い時も悪い時も守ってくれそうです。</p>
+                    <p>MRG-B2000Rを購入／T.S様／男性</p>
+                </div>
+                <div class="txt gray rigth">
+                    <p>文字盤のデザインが扇型で、立体感がありオシャレな感じがした。<br>
+                        黒・青・ゴールドの配色が素敵だった。</p>
+                    <p>MRG-B2000Bを購入／Y.F様／男性</p>
+                </div>
+                <div class="txt blue">
+                    <p>初代モデルをモチーフに究極のモデルとしてリリースするというコンセプトに惹かれました。<br>
+                        本体・バンド共に質感が素晴らしく、装着時の満足感も究極です！</p>
+                    <p>MRG-B5000Dを購入／H.M様／男性</p>
+                </div>
+                <div class="txt rigth">
+                    <p>デザインに一目惚れしました。<br>
+                        特に文字盤やラバーの色が魅力的でした。</p>
+                    <p>MRG-G2000を購入／S.Y様／女性</p>
+                </div>
+                <div class="txt gray">
+                    <p>初めて買った時計はG-SHOCKの5000シリーズで20年ほど愛用していました。<br>年齢を重ねて、自分に見合った時計を…と思っていたらこの時計を見つけ思い入れのある5000のシリーズであることや見た目の美しさ、着用感もよかったので購入しました。
+                    </p>
+                    <p>MRG-B5000BAを購入／S.A様／男性</p>
+                </div>
+                <div class="txt blue rigth">
+                    <p>仕事でガンガン、ガシガシ使えて、ビジネスシーンでもしっかり仕事をしてくれ、見る人が見たら分かるという時計が欲しくてこのMR-Gに決めました。</p>
+                    <p>MRG-B2000Bをご購入／Y.U様／男性</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec04">
+            <h2>
+                <picture>
+                    <source media="(max-width:768px)" type="image/svg" srcset="../common/img/recommend_sp.svg">
+                    <source media="(min-width:769px)" type="image/svg" srcset="../common/img/recommend.svg">
+                    <img src="../common/img/recommend.svg" alt="お勧めする理由">
+                </picture>
+            </h2>
+            <p>私たちがおすすめする理由</p>
+
+            <div class="flexWrap">
+                <div class="flex">
+                    <img src="../common/img/people/people_5.png" alt="">
+                    <div class="txt">
+                        <p>G-SHOCKなのに、この値段？！とよく驚かれますが、逆にG-SHOCKという名前でこの値段を出すということは、相当造りに自信がないと出せない値段だと思います。高級感とタフさ、まさにオンとオフで使えるオールラウンダーですね。
+                        </p>
+                        <p>タイムぺディアスタッフ／藤田</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="../common/img/people/people_6.png" alt="">
+                    <div class="txt">
+                        <p>数々のG-SHOCKを扱っているからこそ分かる、物作りのこだわり。タフネスさだけでなく、美しさも極めている強い信念を感じられます。1度手にとって体感していただきたいです。</p>
+                        <p>タイムぺディアスタッフ／河野</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">
+                Youtubeチャンネルはこちら
+            </a>
+        </section>
+
+        <section class="sec05">
+            <h2>
+                <img src="../common/img/lineup.svg
+            " alt="ラインナップ">
+                <p>MR-Gの代表的なラインナップ</p>
+            </h2>
+
+            <p>MR-Gシリーズは<br class="sp">バリエーション豊富に<br class="sp">取り揃えております。<br>
+                ライフスタイルや<br class="sp">コーディネートに合わせて<br>
+                お気に入りの1本を<br class="sp">見つけてください。</p>
+            <div class="flex">
+                <img src="../common/img/watch/watch_13.png" alt="">
+                <img src="../common/img/watch/watch_14.png" alt="">
+                <img src="../common/img/watch/watch_15.png" alt="">
+                <img src="../common/img/watch/watch_16.png" alt="">
+            </div>
+            <a href="#">
+                <img src="../common/img/all_linup.png" alt="">
+            </a>
+        </section>
+
+        <section class="sec06">
+            <picture>
+                <source media="(max-width:768px)" type="image/png" srcset="../common/img/try_sp.png">
+                <source media="(min-width:769px)" type="image/png" srcset="../common/img/try.png">
+                <img src="../common/img/try.png" alt="">
+            </picture>
+        </section>
+
+        <section class="sec07">
+            <div class="wrap">
+                <h2>
+                    <img src="../common/img/shop.svg
+                " alt="ショップ">
+                    <p>Timepedia 店舗情報</p>
+                </h2>
+
+                <p>ハイエンド<br class="sp">G-SHOCK取扱店><br>
+                    MR-Gシリーズを<br class="sp">手に入れるなら<br class="sp">Timepedia.
+                </p>
+                <picture>
+                    <source media="(max-width:768px)" type="image/png" srcset="../common/img/map_sp.png">
+                    <source media="(min-width:769px)" type="image/png" srcset="../common/img/map.png">
+                    <img class="map" src="../common/img/map.png" alt="">
+                </picture>
+                <div class="flex">
+                    <picture>
+                        <source media="(max-width:768px)" type="image/jpg" srcset="../common/img/store_sp.jpg">
+                        <source media="(min-width:769px)" type="image/png" srcset="../common/img/store.jpg">
+                        <img class="store" src="../common/img/store.jpg" alt="">
+                    </picture>
+                    <div class="wrap_inner">
+                        <img class="name" src="../common/img/store_name.png" alt="">
+                        <p>〒730-0033 広島県広島市中区堀川町5-3<br>
+                            <span>●広島電鉄八丁堀駅から徒歩2分</span><span>（中央通りに面しております。）</span>
+                        </p>
+                        <p>営業時間／11:30 - 19:00<br>
+                            定休日／火曜日</p>
+                    </div>
+                </div>
+                <p>お電話でのお問い合わせもお気軽に。<br class="sp">商品についてのご相談もお尋ねください。</p>
+                <img class="tell" src="../common/img/tel.png" alt="">
+            </div>
+        </section>
+
+        <section class="sec08">
+            <a href="#" class="btn">
+                MR-Gの他にも魅力的な商品を<br class="sp">取り揃えております
+            </a>
+        </section>
+
+    </main>
+
+    <!-- footerはここのをコピペして使用してください -->
+    <footer class="footer" id="footer">
+        <ul class="footer_list">
+            <li class="footer_item">
+                <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                    <div class="sns_icon">
+                        <img src="../common/img/footer/line_icon.svg" alt="LINE">
+                    </div>
+                </a>
+            </li>
+            <li class="footer_item">
+                <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                    <div class="sns_icon">
+                        <img src="../common/img/footer/insta_icon.svg" alt="instagram">
+                    </div>
+                </a>
+            </li>
+            <li class="footer_item">
+                <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                    <div class="sns_icon">
+                        <img src="../common/img/footer/youtube_icon.svg" alt="youtube">
+                    </div>
+                </a>
+            </li>
+            <li class="footer_item">
+                <a href="https://line.me/R/ti/p/%40qnc8698n" class="footer_sns--button" target="_blank" rel="noopener">
+                    <div class="sns_icon">
+                        <img src="../common/img/footer/tiktok_icon.svg" alt="tiktok">
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <a href="https://www.timepedia.co.jp/" class="footer_home--button">home</a>
+
+        <small class="copyright_area">
+            <span class="copyright">Copyright</span> &copy; Timepedia
+        </small>
+    </footer>
+    <!-- footerここまで -->
 </body>
+
 </html>

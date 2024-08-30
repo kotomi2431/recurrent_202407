@@ -3,8 +3,8 @@
 ///*------------------------------------*//
 //    Fonts
 //*------------------------------------*//
-$font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
-$line-height: 1.5;
+$font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+$line-height: 2;
 
 
 
@@ -13,10 +13,10 @@ $line-height: 1.5;
 //    Colors
 //*------------------------------------*//
 $main-color: #fff;
-$accent-color: #f00;
+$accent-color: #23324E;
 $font-color: #000;
-$base-color: #fff;
-$bg-color: #fff;
+$base-color: #4B4A52;
+$bg-color: #000;
 
 
 
@@ -26,7 +26,7 @@ $bg-color: #fff;
 //*------------------------------------*//
 
 //メディアクエリ挿入
-@mixin media_query($width:640) {
+@mixin media_query($width: 640) {
     @media screen and (max-width: $width+px) {
         @content;
     }
